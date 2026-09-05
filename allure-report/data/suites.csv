@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6392","Register-Invalid-To validate the registration functionallity","","2026-08-29","passed","2026-08-29","","","",""
+"","7596","Register-Valid-To validate the registration functionallity","","2026-08-29","passed","2026-08-29","","","",""
+"","5580","Login-Invalid-To validate the login functionallity with Invalid Credentials","","2026-08-29","passed","2026-08-29","","","",""
+"","5388","Login-Valid-To validate the login functionallity with Invalid Credentials","","2026-08-29","passed","2026-08-29","","","",""

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="12.212" tests="2" skipped="0" failures="2" errors="0" timestamp="2026-08-29T06:28:38.230Z">
+  <testcase classname="To validate the login functionallity of the facebook application" name="Login-Invalid-To validate the login functionallity with Invalid Credentials" time="6.129">
+    <failure type="AssertionError" message="The expression evaluated to a falsy value:&#xA;&#xA;  assert.ok(currentURL.includes(&quot;Facebook&quot;))&#xA;"><![CDATA[AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(currentURL.includes("Facebook"))
+
+    + expected - actual
+
+    -false
+    +true
+
+    at AllureCucumberWorld.<anonymous> (D:\PlayWrightProject\CucumberPlaywrightWeekEnd\tests\Stepdefinition\LoginSteps.js:26:10)]]></failure>
+    <system-out><![CDATA[Given The user should be in login page......................................passed
+When The user has to fill the username "ramesh@gmail.com" and password "431456271"..passed
+And The user has to click the login button..................................passed
+Then The user should be navigate the Invalid login page.....................failed]]></system-out>
+  </testcase>
+  <testcase classname="To validate the login functionallity of the facebook application" name="Login-Valid-To validate the login functionallity with Invalid Credentials" time="5.998">
+    <failure type="AssertionError" message="The expression evaluated to a falsy value:&#xA;&#xA;  assert.ok(currentURL.includes(&quot;Facebook&quot;))&#xA;"><![CDATA[AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(currentURL.includes("Facebook"))
+
+    + expected - actual
+
+    -false
+    +true
+
+    at AllureCucumberWorld.<anonymous> (D:\PlayWrightProject\CucumberPlaywrightWeekEnd\tests\Stepdefinition\LoginSteps.js:26:10)]]></failure>
+    <system-out><![CDATA[Given The user should be in login page......................................passed
+When The user has to fill the username "kumar@gmail.com" and password "534156232"..passed
+And The user has to click the login button..................................passed
+Then The user should be navigate the Invalid login page.....................failed]]></system-out>
+  </testcase>
+</testsuite>
