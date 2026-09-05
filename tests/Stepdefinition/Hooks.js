@@ -11,22 +11,6 @@ Before(async function () {
 
 After(async function (Scenario) {
 
-await this.page.screenshot({
-  path:'tests/ScreenShots/"+Date.now()+".png',
-  fullPage:true
-})
-
-//Take ScreenShots all Passed and Failed Scenarios
-const scenarioName=Scenario.pickle.name.trim().replace(/[^a-zA-Z0-9]/g, "_")
-const filePath=`tests/ScreenShots/${scenarioName}.png`
-
-const screenshotImage=await this.page.screenshot({
-  path:filePath,
-  fullPage:true
-})
-
-await this.attach(screenshotImage,"image/png")
-
 if(Scenario.result.status=== 'FAILED'){
   const scenarioName=Scenario.pickle.name.trim().replace(/[^a-zA-Z0-9]/g, "_")
 const filePath=`tests/ScreenShots/${scenarioName}.png`
@@ -41,4 +25,20 @@ await this.attach(screenshotImage,"image/png")
 
   await utils.pageClose(this.page);
   console.log("------------After Scenario---------------1");
+
+  await this.page.screenshot({
+  path:'tests/ScreenShots/"+Date.now()+".png',
+  fullPage:true
+})
+
+//Take ScreenShots all Passed and Failed Scenarios
+const scenarioName=Scenario.pickle.name.trim().replace(/[^a-zA-Z0-9]/g, "_")
+const filePath=`tests/ScreenShots/${scenarioName}.png`
+
+const screenshotImage=await this.page.screenshot({
+  path:filePath,
+  fullPage:true
+})
+
+await this.attach(screenshotImage,"image/png")
 });
